@@ -14,7 +14,7 @@
 /* -- page layout ----------------------------------------------------------- */
  
 body {
-    font-family: "NobileRegular", sans-serif;
+    font-family: "{{ theme_font_body }}Regular", sans-serif;
     font-size: 14px;
     background-color: #393939;
     color: #ffffff;
@@ -119,7 +119,7 @@ div.sphinxsidebarwrapper{
  
 div.sphinxsidebar h3,
 div.sphinxsidebar h4 {
-    font-family: "NeutonRegular", sans-serif;
+    font-family: "{{ theme_font_header}}Regular", sans-serif;
     color: #373839;
     font-size: 1.4em;
     font-weight: normal;
@@ -200,7 +200,7 @@ div.body h3,
 div.body h4,
 div.body h5,
 div.body h6 {
-    font-family: "NeutonRegular", sans-serif;
+    font-family: "{{ theme_font_body }}Regular", sans-serif;
     background-color: #ffffff;
     font-weight: normal;
     color: #222;
@@ -320,7 +320,7 @@ tt {
 }
 
 .viewcode-back {
-    font-family: "NobileRegular", sans-serif;
+    font-family: "{{ theme_font_body }}Regular", sans-serif;
 }
 
 div.viewcode-block:target {
@@ -349,7 +349,7 @@ a:hover em.std-term {
 }
 
 .download {
-    font-family: "NobileRegular", sans-serif;
+    font-family: "{{ theme_font_body }}Regular", sans-serif;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -360,7 +360,7 @@ tt.xref {
 }
 
 span.methodcategory {
-    font-family: "NeutonRegular", sans-serif;
+    font-family: "{{ theme_font_body }}Regular", sans-serif;
     background-color: #ffffff;
     font-weight: normal;
     color: #222;
