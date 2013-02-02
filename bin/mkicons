@@ -33,7 +33,7 @@ rm -f "${link_file}"
 declare -ai favicon_sizes=( 16 32 64 )
 
 # sizes for Apple Touch / Chrome application icons
-declare -ai appicon_sizes=( 57 72 114 128 144 )
+declare -ai appicon_sizes=( 40 57 72 114 128 144 )
 
 # number of colors in final image palettes
 declare -i ncolors=64
