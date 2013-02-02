@@ -1,8 +1,9 @@
 {% extends "basic/layout.html" %}
 
 {%- block extrahead %}
-<link rel="stylesheet" href="{{ pathto('_static/fonts/'+theme_font_body.lower()+'/stylesheet.css', 1) }}" type="text/css" media="screen" charset="utf-8" />
-<link rel="stylesheet" href="{{ pathto('_static/fonts/'+theme_font_header.lower()+'/stylesheet.css', 1) }}" type="text/css" media="screen" charset="utf-8" />
+{%- for fontset in theme_fontsets.split() %}
+<link rel="stylesheet" href="{{ pathto('_static/fonts/'+fontset.strip()+'/stylesheet.css', 1) }}" type="text/css" media="screen" charset="utf-8" />
+{%- endfor %}
 <!--[if lte IE 6]>
 <link rel="stylesheet" href="{{ pathto('_static/ie6.css', 1) }}" type="text/css" media="screen" charset="utf-8" />
 <![endif]-->
