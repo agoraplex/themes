@@ -4,9 +4,9 @@ from pygments.token import Keyword, Name, Comment, String, Error, \
      Number, Operator, Generic, Whitespace, Punctuation, Other, Literal
 
 
-class PylonsStyle(Style):
+class AgoraplexStyle(Style):
     """
-    Pylons pygments style based on friendly style
+    Agoraplex pygments style based on Pylons style
     """
 
     # work in progress...
@@ -64,7 +64,7 @@ class PylonsStyle(Style):
     }
 
 
-class PylonsBWStyle(Style):
+class AgoraplexBWStyle(Style):
 
     background_color = "#ffffff"
     default_style = "bw"

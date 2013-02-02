@@ -1,8 +1,9 @@
-Pylons Sphinx Theme
-===================
+Agoraplex Sphinx Theme
+======================
 
-This repository contains Pylons themes for Pylons related projects.
-To use a theme in your Sphinx documentation, follow this guide:
+This repository contains themes for `Agoraplex`_ projects, based on
+the `Pylons project Sphinx themes <pylons_sphinx_theme>`_. To use a
+theme in your Sphinx documentation, follow this guide:
 
 1. put this directory as _themes into your docs folder.  Alternatively
    you can also use git submodules to check out the contents there
@@ -12,10 +13,11 @@ To use a theme in your Sphinx documentation, follow this guide:
 
     sys.path.append(os.path.abspath('_themes'))
     html_theme_path = ['_themes']
-    html_theme = 'pylons'
+    html_theme = 'agoraplex'
 
 The following themes exist:
 
-- **pylons** - the generic Pylons Project documentation theme
-- **pyramid** - the specific Pyramid documentation theme
-- **pylonsfw** - the specific Pylons Framework documentation theme
+- **agoraplex** - the generic Agoraplex documentation theme
+
+.. _Agoraplex: https://agoraplex.github.com/
+.. _pylons_sphinx_theme: https://github.com/Pylons/pylons_sphinx_theme
