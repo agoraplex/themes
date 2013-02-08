@@ -46,16 +46,14 @@ To use a theme in your Sphinx documentation, follow this guide:
     $ pip install agoraplex-themes
 
 2. Edit your ``conf.py`` doc configuration file to point to the
-   `agoraplex` theme:
+   `agoraplex` theme::
 
-.. code-block: python
+       import agoraplex.themes.sphinx
 
-   import agoraplex.themes.sphinx
+       # ...
 
-   # ...
-
-   html_theme = 'agoraplex'
-   html_theme_path = agoraplex.themes.sphinx.get_html_theme_path()
+       html_theme = 'agoraplex'
+       html_theme_path = agoraplex.themes.sphinx.get_html_theme_path()
 
 
 Helpers
