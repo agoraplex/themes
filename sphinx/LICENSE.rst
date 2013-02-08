@@ -37,6 +37,5 @@ Version 1.1 <http://scripts.sil.org/OFL>`__
 Each font includes its own copy of the OFL with its `Reserved Font
 Name`:
 
-- `Exo <https://github.com/agoraplex/themes/blob/master/sphinx/agoraplex/static/fonts/exo/LICENSE.txt>`__
 - `Neuton <https://github.com/agoraplex/themes/blob/master/sphinx/agoraplex/static/fonts/neuton/LICENSE.txt>`__
 - `Nobile <https://github.com/agoraplex/themes/blob/master/sphinx/agoraplex/static/fonts/nobile/LICENSE.txt>`__
