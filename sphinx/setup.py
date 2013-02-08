@@ -1,6 +1,3 @@
-from distribute_setup import use_setuptools
-use_setuptools()
-
 from setuptools import setup, find_packages
 
 from agoraplex.themes.sphinx import __version__
@@ -24,7 +21,10 @@ setup(
     include_package_data=True,
     zip_safe=False,
 
-    install_requires=['sphinx>=1.1'],
+    install_requires=[
+        'distribute',
+        'sphinx>=1.1',
+        ],
 
     url='https://github.com/agoraplex/themes',
     license='See LICENSE.rst',
