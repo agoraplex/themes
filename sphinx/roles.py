@@ -50,7 +50,7 @@ def make_github_link_node(rawtext, app, account, project, options):
     :param project: GitHub project name
     :param options: Options dictionary passed to role func.
     """
-    base = app.config.github_url or 'https://github.com/'
+    base = app.config.github_url
     slash = '/' if base[-1] != '/' else ''
 
     pagename = account + '/' + (project if project else '')
@@ -94,7 +94,7 @@ def make_pypi_link_node(rawtext, app, project, options):
     :param project: PyPI project name
     :param options: Options dictionary passed to role func.
     """
-    base = app.config.pypi_url or 'http://pypi.python.org/pypi/'
+    base = app.config.pypi_url
     slash = '/' if base[-1] != '/' else ''
 
     ref = base + slash + project
@@ -165,10 +165,10 @@ def setup (app):
     :param app: Sphinx application context.
     """
     app.add_role('github', github_project_role)
-    app.add_config_value('github_url', None, 'env')
+    app.add_config_value('github_url', 'https://github.com/', 'env')
 
     app.add_role('pypi', pypi_project_role)
-    app.add_config_value('pypi_url', None, 'env')
+    app.add_config_value('pypi_url', 'http://pypi.python.org/pypi/', 'env')
 
     app.add_role('wikipedia', wikipedia_role)
     app.add_config_value('wikipedia_url', 'http://%s.wikipedia.org/wiki/', 'env')
