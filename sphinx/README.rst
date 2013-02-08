@@ -42,26 +42,29 @@ Installation
 
 To use a theme in your Sphinx documentation, follow this guide:
 
-1. Put this directory as ``themes`` into your docs folder.
-   Alternatively, you can use ``git submodule`` or ``git subtree`` to
-   check out the contents there, or symlink this directory as
-   ``themes``.
+1. Install the package::
 
-2. Add this to your ``conf.py``:
+    $ pip install agoraplex-themes
+
+2. Edit your ``conf.py`` doc configuration file to point to the
+   `agoraplex` theme:
 
 .. code-block: python
 
-   sys.path.append(os.path.abspath('themes'))
-   html_theme_path = ['themes']
+   import agoraplex.themes.sphinx
+
+   # ...
+
    html_theme = 'agoraplex'
+   html_theme_path = agoraplex.themes.sphinx.get_html_theme_path()
 
 
 Helpers
 -------
 
 This package adds several Sphinx helper roles (in ``roles.py``). To
-use these, add ``roles`` to the ``extensions`` list in your
-``conf.py``.
+use these, add ``agoraplex.themes.sphinx.roles`` to the ``extensions``
+list in your ``conf.py``.
 
 The roles are:
 
