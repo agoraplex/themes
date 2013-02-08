@@ -43,7 +43,7 @@ To use a theme in your Sphinx documentation, follow this guide:
 
 1. Install the package::
 
-    $ pip install agoraplex-themes
+    $ pip install agoraplex.themes.sphinx
 
 2. Edit your ``conf.py`` doc configuration file to point to the
    `agoraplex` theme::
@@ -75,7 +75,7 @@ The roles are:
 - ``pypi``: link to a project record at `PyPi, the Python Package
   Index <http://pypi.python.org/>`__::
 
-    :pypi:`agoraplex-themes`
+    :pypi:`agoraplex.themes.sphinx`
 
   The ``pypi_url`` configuration directive defaults to
   ``http://pypi.python.org/pypi/``

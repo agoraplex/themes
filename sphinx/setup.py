@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 from agoraplex.themes.sphinx import __version__
 
 setup(
-    name='agoraplex-themes',
+    name='agoraplex.themes.sphinx',
     version=__version__,
     author='Tripp Lilley',
     author_email='tripplilley@gmail.com',
