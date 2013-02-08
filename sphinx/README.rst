@@ -1,6 +1,6 @@
-===========================
- `Agoraplex Sphinx Theme`_
-===========================
+==================================================================
+ `Agoraplex Sphinx Theme <https://github.com/agoraplex/themes>`__
+==================================================================
 
 About
 =====
@@ -11,7 +11,6 @@ following themes exist:
 
 - **agoraplex** - the generic `Agoraplex`_ documentation theme
 
-.. _Agoraplex Sphinx Theme: https://github.com/agoraplex/themes
 .. _Sphinx: http://sphinx-doc.org/
 .. _Agoraplex: http://agoraplex.github.com/
 .. _Pylons Sphinx Themes: https://github.com/Pylons/pylons_sphinx_theme
