@@ -51,7 +51,7 @@ To use a theme in your Sphinx documentation, follow this guide:
 
 .. code-block: python
 
-   sys.path.append(os.path.abspath('_themes'))
+   sys.path.append(os.path.abspath('themes'))
    html_theme_path = ['themes']
    html_theme = 'agoraplex'
 
@@ -59,7 +59,11 @@ To use a theme in your Sphinx documentation, follow this guide:
 Helpers
 -------
 
-This package adds several Sphinx helper roles (in ``roles.py``):
+This package adds several Sphinx helper roles (in ``roles.py``). To
+use these, add ``roles`` to the ``extensions`` list in your
+``conf.py``.
+
+The roles are:
 
 - ``github``: link to a github_ project::
 
