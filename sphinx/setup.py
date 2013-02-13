@@ -1,10 +1,8 @@
 from setuptools import setup, find_packages
 
-from agoraplex.themes.sphinx import __version__
-
 setup(
     name='agoraplex.themes.sphinx',
-    version=__version__,
+    version='0.1.2',
     author='Tripp Lilley',
     author_email='tripplilley@gmail.com',
     keywords='sphinx extension theme agoraplex',

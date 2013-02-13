@@ -1,10 +1,5 @@
 import os
 
-VERSION = (0, 1, 2)
-
-__version__ = ".".join(str(v) for v in VERSION)
-__version_full__ = __version__
-
 def get_html_theme_path ():
     """
     Return a list of HTML theme paths
