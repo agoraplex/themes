@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='agoraplex.themes.sphinx',
-    version='0.1.2',
+    version='0.1.3',
     author='Tripp Lilley',
     author_email='tripplilley@gmail.com',
     keywords='sphinx extension theme agoraplex',
