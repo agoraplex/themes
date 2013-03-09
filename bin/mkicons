@@ -35,6 +35,9 @@ declare -ai favicon_sizes=( 16 32 64 )
 # sizes for Apple Touch / Chrome application icons
 declare -ai appicon_sizes=( 40 57 72 114 128 144 )
 
+# Chrome extension icons
+declare -ai exticon_sizes=( 19 48 )
+
 # number of colors in final image palettes
 declare -i ncolors=64
 
@@ -45,7 +48,7 @@ bgcolor="${BGCOLOR:-white}"
 cp "${src}" "${svg}"
 
 # render images, as necessary
-for size in "${favicon_sizes[@]}" "${appicon_sizes[@]}" ; do
+for size in "${favicon_sizes[@]}" "${appicon_sizes[@]}" "${exticon_sizes[@]}" ; do
     base="${size}x${size}"
     pnm="${build_dir}/${base}.pnm"
     png="${build_dir}/${base}.png"
